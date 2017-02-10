@@ -9,10 +9,12 @@ test('remove an item at the end', t => {
   let { list } = t.context
   list.insert('foo')
   list.insert('bar')
-  list.remove('bar')
-  t.is(list.size, 1)
+  list.insert('baz')
+  list.remove('baz')
+  t.is(list.size, 2)
   t.is(list.head.value, 'foo')
-  t.is(list.tail.value, 'foo')
+  t.is(list.head.next.value, 'bar')
+  t.is(list.tail.value, 'bar')
 })
 
 test('remove an item at the begining', t => {
@@ -23,6 +25,18 @@ test('remove an item at the begining', t => {
   t.is(list.size, 1)
   t.is(list.head.value, 'bar')
   t.is(list.tail.value, 'bar')
+})
+
+test('remove an item in the middle', t => {
+  let { list } = t.context
+  list.insert('foo')
+  list.insert('bar')
+  list.insert('baz')
+  list.remove('bar')
+  t.is(list.size, 2)
+  t.is(list.head.value, 'foo')
+  t.is(list.head.next.value, 'baz')
+  t.is(list.tail.value, 'baz')
 })
 
 test('remove a lonely item', t => {
