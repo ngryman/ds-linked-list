@@ -1,0 +1,53 @@
+{
+  "name": "ds-linked-list",
+  "version": "0.0.0",
+  "description": "Linked list data structure",
+  "main": "index.js",
+  "repository": "ngryman/ds-linked-list",
+  "author": "Nicolas Gryman <ngryman@gmail.com> (http://ngryman.sh/)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "meta lint",
+    "pretest": "npm run lint -s",
+    "test": "meta test",
+    "dev": "meta dev",
+    "coverage": "meta coverage",
+    "see-coverage": "meta see-coverage",
+    "check-coverage": "meta check-coverage",
+    "docs": "documentation readme index.js --section=API",
+    "prebuild": "npm run lint -s",
+    "build": "meta build",
+    "prepublish": "npm run build -s",
+    "precommit": "npm run docs -s"
+  },
+  "dependencies": [],
+  "devDependencies": {
+    "documentation": "^4.0.0-beta.18",
+    "meta-dev": "^0.4.2"
+  },
+  "eslintConfig": {
+    "extends": "ngryman"
+  },
+  "ava": {
+    "concurrency": 4,
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          "node5"
+        ],
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    }
+  },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false
+  }
+}
