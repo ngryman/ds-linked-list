@@ -34,8 +34,8 @@ export default class LinkedList {
    *
    * @example
    * list.insertAfter(1, 2)
-   * list.insert('foo', 'bar')
-   * list.insert(ref, { baz: 'qux' })
+   * list.insertAfter('foo', 'bar')
+   * list.insertAfter(ref, { baz: 'qux' })
    *
    * @param {*} ref
    * @param {*} item
@@ -49,8 +49,8 @@ export default class LinkedList {
    *
    * @example
    * list.insertAt(1, 2)
-   * list.insert(1, 'bar')
-   * list.insert(1, { baz: 'qux' })
+   * list.insertAt(1, 'bar')
+   * list.insertAt(1, { baz: 'qux' })
    *
    * @param {Number} k
    * @param {*} item
@@ -126,7 +126,7 @@ export default class LinkedList {
    * Return a string representation of the list.
    *
    * @example
-   * list.entries()
+   * list.inspect()
    * // => [ 1, 'foo', { foo: 'bar' }]
    *
    * @return {String}
