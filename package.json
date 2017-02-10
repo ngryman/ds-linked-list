@@ -1,6 +1,6 @@
 {
   "name": "ds-linked-list",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Linked list data structure",
   "main": "index.js",
   "repository": "ngryman/ds-linked-list",
