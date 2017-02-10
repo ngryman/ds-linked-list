@@ -17,6 +17,13 @@
 
 * * *
 
+## Big-O
+
+        | Access | Search | Insertion | Deletion
+------- | ------ | ------ | --------- | --------
+Average | `Θ(n)` | `Θ(n)` | `Θ(1)`    | `Θ(1)`
+Worst   | `O(n)` | `O(n)` | `O(1)`    | `O(1)`
+
 ## Install
 
 ```bash
