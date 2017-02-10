@@ -19,6 +19,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/ds-linked-list.svg)](https://greenkeeper.io/)
+
 ```bash
 yarn add ds-linked-list
 ```
