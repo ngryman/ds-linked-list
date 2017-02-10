@@ -46,7 +46,7 @@ export default class LinkedList {
   }
 
   /**
-   * Insert an item at the given index.
+   * Insert an item at the given index in the list.
    *
    * @example
    * list.insertAt(1, 2)
@@ -61,7 +61,7 @@ export default class LinkedList {
   }
 
   /**
-   * Remove an item.
+   * Remove an item from the list.
    *
    * @example
    * list.remove(1)
@@ -75,7 +75,7 @@ export default class LinkedList {
   }
 
   /**
-   * Remove an item at the given index.
+   * Remove an item at the given index in the list.
    *
    * @example
    * list.removeAt(0)
@@ -87,7 +87,7 @@ export default class LinkedList {
   }
 
   /**
-   * Return `true` if the item is in the list.
+   * Return `true` if an item is in the list.
    *
    * @example
    * list.has(1)
@@ -105,7 +105,7 @@ export default class LinkedList {
   }
 
   /**
-   * Return the item at the given index or `-1`.
+   * Return an item at the given index in the list or `-1`.
    *
    * @example
    * list.at(0)
