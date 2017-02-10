@@ -2,6 +2,7 @@ import insert from './lib/insert'
 import insertAfter from './lib/insert-after'
 import insertAt from './lib/insert-at'
 import remove from './lib/remove'
+import removeAt from './lib/remove-at'
 import has from './lib/has'
 import at from './lib/at'
 import entries from './lib/entries'
@@ -71,6 +72,18 @@ export default class LinkedList {
    */
   remove(item) {
     remove(this, item)
+  }
+
+  /**
+   * Remove an item at the given index.
+   *
+   * @example
+   * list.removeAt(0)
+   *
+   * @param {Number} k
+   */
+  removeAt(k) {
+    removeAt(this, k)
   }
 
   /**
