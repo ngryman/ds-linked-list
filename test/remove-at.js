@@ -5,7 +5,7 @@ test.beforeEach(t => {
   t.context.list = new LinkedList()
 })
 
-test.only('remove an item at the end', t => {
+test('remove an item at the end', t => {
   let { list } = t.context
   list.insert('foo')
   list.insert('bar')
